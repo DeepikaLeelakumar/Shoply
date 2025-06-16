@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Cart</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ✅ Add this top bar like index.html -->
+  <header class="topbar">
+    <h1>Your Cart 🛒</h1>
+    <div class="auth-buttons">
+      <a href="index.html" class="btn">Home</a>
+      <a href="login.html" class="btn">Login</a>
+      <a href="signup.html" class="btn">Sign Up</a>
+      <a href="cart.html" class="btn">Cart (<span id="cart-count">0</span>)</a>
+    </div>
+  </header>
+
+  <div id="cart-container"></div>
+  <div id="total-price" style="text-align:center; margin-top: 20px;"></div>
+
+  <script src="cart.js"></script>
+</body>
+</html>

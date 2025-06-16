@@ -1,0 +1,233 @@
+/* Reset and base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+  background: linear-gradient(to right, #e0f7fa, #fce4ec);
+}
+
+/* Header / Topbar */
+.topbar {
+  background: linear-gradient(to right, #ce93d8, #f8bbd0);
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.topbar h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #4a148c;
+}
+
+/* Auth buttons */
+.auth-buttons a {
+  background-color: #ba68c8;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  margin-left: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.auth-buttons a:hover {
+  background-color: #ab47bc;
+  transform: scale(1.05);
+}
+
+/* Main Product Grid */
+#main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Product Card */
+.Items {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  width: 200px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  margin: 15px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+.Items:hover {
+  transform: translateY(-5px);
+}
+
+/* Product Image */
+.Items img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.Items img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Product Text */
+.Items h1 {
+  font-size: 14px;
+  text-align: center;
+  margin: 10px 0 4px 0;
+  color: #4a148c;
+}
+.Items p {
+  font-size: 13px;
+  color: #555;
+}
+
+/* Buttons (used in cart & add-to-cart) */
+button,
+.cart-item button,
+#total-price button {
+  background-color: #ba68c8;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin: 5px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+button:hover,
+.cart-item button:hover,
+#total-price button:hover {
+  background-color: #ab47bc;
+  transform: scale(1.05);
+}
+
+/* Cart Layout */
+#cart-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+.cart-item {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  margin: 15px;
+  padding: 15px;
+  width: 220px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+.cart-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+/* Total Price Section */
+#total-price {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 30px;
+  color: #4a148c;
+}
+
+/* Login Page Styling */
+.login-container {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to right, #e0f7fa, #fce4ec);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  background-color: #fff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.login-box h2 {
+  color: #6a1b9a;
+  margin-bottom: 20px;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.login-box button {
+  width: 100%;
+  background-color: #ba68c8;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-box button:hover {
+  background-color: #ab47bc;
+}
+
+.login-box p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.login-box a {
+  color: #6a1b9a;
+  font-weight: bold;
+  text-decoration: none;
+}
+.login-box a:hover {
+  text-decoration: underline;
+}
+/* Sign Up Page Gradient */
+.signup-page {
+  background: linear-gradient(to right, #d4fc79, #96e6a1); /* Aqua green gradient */
+}
+
+/* Optional: Different button color for Sign Up */
+.signup-btn {
+  padding: 10px 25px;
+  background-color: #4dd0e1; /* Light blue */
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.signup-btn:hover {
+  background-color: #00acc1; /* Slightly darker on hover */
+}
+
