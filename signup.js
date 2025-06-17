@@ -1,16 +1,22 @@
-document.addEventListener("DOMContentLoaded", function () {
-  document.getElementById("signupForm").addEventListener("submit", function (e) {
+window.onload = function () {
+  const signupForm = document.getElementById("signupForm");
+
+  signupForm.addEventListener("submit", function (e) {
     e.preventDefault();
 
-    let username = document.getElementById("username").value;
-    let password = document.getElementById("password").value;
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
 
-    // Save signup info (only for demo)
-    let user = { username, password };
-    localStorage.setItem("loggedInUser", JSON.stringify(user));
+    const user = {
+      name: name,
+      email: email,
+      password: password
+    };
 
-    // Redirect to home page
-    alert("Signup successful!");
-    window.location.href = "index.html";
+    localStorage.setItem("user", JSON.stringify(user));
+
+    alert("Signup successful! Please log in.");
+    window.location.href = "login.html";
   });
-});
+};
