@@ -6,7 +6,7 @@ Welcome to **Shoply**, a clean and user-friendly eCommerce frontend built using 
 
 ## 🌐 Live Demo
 
-👉 [Click here to view the live site](https://github.com/user-attachments/assets/8e93ca48-e7f5-4f6f-b5e9-0377c08ab4b3)  
+👉 [Click here to view the live site](https://deepikaleelakumar.github.io/Shoply/)  
 *(Update this with your actual deployed link)*
 
 ---
